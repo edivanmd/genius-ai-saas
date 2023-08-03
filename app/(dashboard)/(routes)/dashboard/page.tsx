@@ -1,8 +1,12 @@
-import React from 'react'
+import { UserButton } from '@clerk/nextjs'
 
 const DashboardPage = () => {
   return (
-    <div>Dashboard</div>
+    <div>
+      <p>Dashboard (Protected)</p>
+      <UserButton afterSignOutUrl="/"/>
+    
+    </div>
   )
 }
 
